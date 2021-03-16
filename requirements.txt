@@ -1,0 +1,7 @@
+ConfigArgParse
+black
+requests
+dataset
+fastapi
+uvicorn[standard]
+psycopg2
