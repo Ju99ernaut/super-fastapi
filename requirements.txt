@@ -1,5 +1,4 @@
 ConfigArgParse
-black
 requests
 dataset
 fastapi
