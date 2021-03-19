@@ -16,13 +16,13 @@ $ cd superfast-api
 Create virtual enviroment
 
 ```sh
-$ python3 -m venv venv
+$ python -m venv venv
 ```
 
 Activate virtual enviroment
 
 Linux/MacOS: `source venv/bin/activate`
-Windows: `.\venv\Scripts\Activate.ps1`
+Windows: `.\venv\Scripts\Activate.ps1` or `.\venv\Scripts\activate`
 
 Install dependencies
 
@@ -33,7 +33,7 @@ $ pip install -r requirements.txt`
 Run
 
 ```sh
-$ python3 rallyrolebot/main.py
+$ python api/main.py
 ```
 
 The API should now be available at `http://127.0.0.1:8000` and the API documentation will be available at `/docs` or `/redoc`.
