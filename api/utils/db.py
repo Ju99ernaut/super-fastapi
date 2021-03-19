@@ -1,6 +1,4 @@
 import os
-
-from discord.ext import commands
 import functools
 
 import dataset
@@ -13,7 +11,6 @@ def connect_db(function):
     """
     Decorator that creates a database object and inserts as its
     the first argument in the calling function.
-    Useful to prevent global objects
     """
 
     @functools.wraps(function)

@@ -33,5 +33,6 @@ async def root():
         "docs": "api documentation at /docs or /redoc",
     }
 
+
 if __name__ == "__main__":
-    uvicorn.run("app:main", host=config.CONFIG.host, port=int(config.CONFIG.port))
+    uvicorn.run("main:app", host=config.CONFIG.host, port=int(config.CONFIG.port))

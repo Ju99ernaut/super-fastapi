@@ -16,7 +16,7 @@ from utils.db import connect_db
 
 
 @connect_db
-def add_item(db, column1, column1):
+def add_item(db, column1, column2):
     table = db[TABLE]
     table.upsert(
         {
