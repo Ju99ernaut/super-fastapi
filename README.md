@@ -38,6 +38,8 @@ $ python api/main.py
 
 The API should now be available at `http://127.0.0.1:8000` and the API documentation will be available at `/docs` or `/redoc`.
 
+Depending on the type of database backend, you may also need to install a database specific driver package. For MySQL, this is MySQLdb, for Postgres its psycopg2. SQLite support is integrated into Python.
+
 
 ## License
 
