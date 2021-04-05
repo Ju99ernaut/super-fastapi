@@ -40,6 +40,12 @@ The API should now be available at `http://127.0.0.1:8000` and the API documenta
 
 Depending on the type of database backend, you may also need to install a database specific driver package. For MySQL, this is MySQLdb, for Postgres its psycopg2. SQLite support is integrated into Python.
 
+On heroku you may come across the `sqlalchemy.exc.NoSuchModuleError: Can't load plugin: sqlalchemy.dialects:postgres`, you can avoid it by replacing `postgres://...` with `postgresql://...` in your connection url, or you can handle for it programmatically using something like:
+
+```py
+url = url.replace("postgres:", "postgresql:")
+```
+
 
 ## License
 
